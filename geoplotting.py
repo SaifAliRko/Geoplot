@@ -56,7 +56,7 @@ vol = fo.FeatureGroup( name = 'My Map')
 
 for lat,lon,name in zip(lat_vo,lon_vo,name_vo):
 
-    vo.add_child(fo.Marker(location = [lat,lon] , popup = name , icon = fo.Icon(color = 'red')))   # updating every value by looping
+    vol.add_child(fo.Marker(location = [lat,lon] , popup = name , icon = fo.Icon(color = 'red')))   # updating every value by looping
 
 map.add_child(vol)
 
@@ -75,7 +75,7 @@ popu = pd.read_csv('us cities pop.csv')
 
 popu.head()     # will display 5 rows and 4 columns
 
-lat_po = list(popu['lat']
+lat_po = list(popu['lat'])
 lon_po = list(popu['lon'])
 name_po = list(popu['name'])
 pop_po = list(popu['pop'])
@@ -93,4 +93,4 @@ def mar(popu):                   # function that will be used below
 for lat, lon, name , pop in zip(lat_po , lon_po , name_po , pop_po):  # when the files get very huge its better to use zip
     po.add_child(fo.Marker(location = [lat,lon] , popup = [pop , name] , icon = fo.Icon(color = mar(pop)))) # a fucntion defined as mar above
 
-map.add_child(pop)
+map.add_child(po)

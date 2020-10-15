@@ -4,8 +4,8 @@ a program that takes volcano and usa cities as csv and a world json file and geo
 
 adding color marks
 
-![alt text](images\adding colormarks.jpg)
+![](images/adding colormarks.jpg)
 
 adding volcanos
 
-![alt text](images\plottingVolcanos.jpg)
+![](images\plottingVolcanos.jpg)
